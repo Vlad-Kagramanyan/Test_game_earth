@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>canvas game</title>
+		<script src='interactive.js'></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<audio controls autoplay loop preload>		
+    			<source src="kosmos.mp3" type="audio/mpeg">
+  			</audio>
+			<div id="startGame" class="startGame-div">
+				<p class="startGame-p">start game</p></div>
+			<div id="gameOver" class="gameOver-div none">
+				<p class="gameOver-p">RESTART
+				</p><br/>
+					your score:
+				<span id="myscore"></span>
+			</div>
+			<div class="gameBegin none">
+				<div id="score">SCORE: <span id="outer">0</span></div>
+				<div id="health">HEALTH: <span id="outerHealth">100</span></div>
+				<canvas id="map"></canvas>
+				<canvas id='player'></canvas>
+				<canvas id="enemy"></canvas>
+			</div>
+		</div>	
+	</body>
+	<script src='js/jquery-3.2.1.js'></script>
+	<script src='js/jquery.js'></script>
+</html>
